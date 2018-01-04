@@ -55,7 +55,7 @@ public class Writefile extends HttpServlet {
 		// configures upload settings
         DiskFileItemFactory factory = new DiskFileItemFactory();
 
-        factory.setRepository(new File(System.getProperty("java.io.tmpdir")));
+        factory.setRepository(new File("~/"));
 
         ServletFileUpload upload = new ServletFileUpload(factory);
 
